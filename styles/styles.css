@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuente general y fondo provisiorio*/
+html {
+    font-family:'Poppins', sans-serif;
+    background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+}
+
+/*etiquietas*/
+img {
+    width: 300px;
+    height: 200px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: 0px;
+    color: #ffffff;
+    background-color: black;
+}
+
+
+footer{
+    margin: 0 10px 5px 20px;
+}
+
+h1{
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 5px 0px 10px 0px;
+    text-align: center;
+}
+
+h2, h3, h5, h4{
+    font-weight: 300;
+    margin: 5px 0px 10px 0px;
+    text-align: center;
+}
+
+/*Decoracion menu nav OUT*/
+ul li {
+    list-style: none;
+    display: inline;
+    margin-bottom: 20px;
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+    color: turquoise;
+    cursor: pointer;
+}
+
+h2{
+    font-weight: 300;
+    margin: 10px 0px 5px 0px;
+}
+
+h3{
+    font-weight: 100;
+    margin: 20px 0px 20px 0 px;
+}
+
+p{
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+    align-items: center;
+}
+
+form input::placeholder{
+    color: black
+}
+
+/*fin etiquetas*/
+
+/*clases generales*/
+.sticky{
+    position: fixed;
+    top: 300px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.card{
+    justify-content: space-between;
+    width: 300px;
+    border: solid #6c7272;
+    border-radius: 3% 3% 3% 3%;
+    text-align: justify;
+    margin: 5px 3px 5px 30px;
+    box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
+    -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    padding: 40px 40px 40px 40px;
+}
+
+.logo{
+    flex: 1;
+    text-align: left;
+    width: 300px;
+    height: 200px;
+}
+
+.menu{
+    flex: 1;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.border-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.ppalprod{
+    text-align: center;
+    background-color:grey;
+    background-repeat: repeat;
+    margin: 80px 0px 80px 0px ;
+    justify-content: center;
+}
+
+
+.wsp{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.formprod{
+    text-align: center;
+}
+
+.form-input{
+    width: 20%;
+    padding: 3px;
+    border: none;
+    border-bottom: 4px solid black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.form-textarea{
+    width: 20%;
+    margin-top: 3px;
+    border: none;
+    border-bottom: 4px solid black;
+    background-color: transparent;
+    text-align: center;
+}
+
+.form-submit{  
+    background-color: green;
+    font-size: 15px;
+}
+
+.form-reset{  
+    background-color: red;
+    font-size: 15px;
+}
+
+.frame{
+    justify-content: center;
+}
+
+.encabezado{
+    display: inline;
+}
+
+.index{
+    display: flex;
+    text-align: center;
+    background-image: url(../assets/FONDO\ MAIN.jpg);
+    background-repeat: no-repeat;
+    color: #eaf2f8;
+    justify-content: space-between;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fondot1{
+    background-image: url(../assets/Fondo\ titulo1.png);
+    background-repeat:repeat;
+    color: #ffffff;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #eaf2f8;
+}
