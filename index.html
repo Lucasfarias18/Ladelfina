@@ -6,93 +6,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>LA DELFINA</title>
 </head>
-<body>
-    <header id="top">
-        <!--Logo principal-->
-            <a href="#">
-            <div class="logo">
-                <img src="./assets/Logo principal.png" alt="Logo principal"></a>
-            </div>
-            <!--Menu principal navegable-->
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./pages/productos.html">Productos</a></li>
-                        <li><a href="./pages/sumate.html">Sumate!</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav> 
-            </div>
+<body class="font">
+        <header id="top" class="header-1 header"> 
+          <a href="#">
+            <img src="./assets/Logo principal.png" alt="Logo principal" class="logo"></a>
+            <nav id="nav" class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header-1" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Quienes somos
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="./pages/galeria.html">Galeria</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/sumate.html">Sumate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
     </header>
     <!--Inicio página-->
-    <main>
-        <h1>BIENVENIDOS A LA DELFINA</h1>
-        <h2>CASAS DE REPUESTOS DEL AUTOMOTOR EN CÓRDOBA CAPITAL</h2>
-        <h3>Repuestos Renault, Ford, Volskwagen, Fiat, Audi, Chevrolet. Autopartes.</h3>
-        <h5>Embragues, Frenos, Bomba de Agua, Tren delantero, Ópticas, Inyección electrónica, Guardabarros, Tazas, Amortiguadores, Paragolpes, Baterías.</h5>
+    <main class="grid-container-index">
+        <div>   
+          <h1>BIENVENIDOS A LA DELFINA</h1>
+          <h2>CASAS DE REPUESTOS DEL AUTOMOTOR EN CÓRDOBA CAPITAL</h2>
+          <h3>Repuestos Renault, Ford, Volskwagen, Fiat, Audi, Chevrolet. Autopartes.</h3>
+          <h5>Embragues, Frenos, Bomba de Agua, Tren delantero, Ópticas, Inyección electrónica, Guardabarros, Tazas, Amortiguadores, Paragolpes, Baterías.</h5>
+        </div>
         <div class="fondot1">
             <h2>¿Por qué comprar en LA DELFINA?</h2>
             <p>Porque desde hace más de 10 años tenemos un fuerte compromiso de servicio hacia los comerciantes del repuesto automotor de todo el país y trabajamos día a día superándonos para atender las necesidades de un mercado cada vez más demandante.</p>
         </div>
+        <div>
         <section class="flex">
-            <div class="card"> <h4><strong>Stock</strong></h4>
-                Contamos con la mayor variedad de stock de las marcas que comercializamos (productos nacionales e importados).</div>
-            <div class="card"><h4><strong>Precios</strong></h4> 
-                Tenemos precios competitivos en todas nuestras líneas debido a que realizamos mejoras continuas en procesos y costos.</div>
-            <div class="card"><h4><strong>Servicio</strong></h4>
-                Contamos con un Departamento de Atención especializada que permite a nuestros clientes realizar consultas y pedidos constantemente, incorporamos nuevas tecnologías de comunicación para estar cada día más cerca y pendiente de las necesidades.</div>
-            <div class="card"><h4><strong>Entrega</strong></h4> 
-                Contamos con entregas en 24hs. en CBA o colocamos el pedido en el transporte que indique. También disponemos de entregas express y retiro por nuestro mostrador en menos de 30min. Conocemos la importancia del cumplimiento, por eso llevamos exaustivos controles de los tiempos de entrega</div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Stock</h5>
+              <p class="card-text">Contamos con la mayor variedad de stock de las marcas que comercializamos (productos nacionales e importados).</p>
+              <a href="#" class="btn submit-index centrado">Conocé más</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Precios</h5>
+              <p class="card-text">Tenemos precios competitivos en todas nuestras líneas debido a que realizamos mejoras continuas en procesos y costos.</p>
+              <a href="#" class="btn submit-index centrado">Conocé más</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Servicio</h5>
+              <p class="card-text">Nuestro Departamento de Atención permite a nuestros clientes realizar pedidos constantemente. Incorporamos nuevas tecnologías de comunicación para estar más cerca y pendiente de las necesidades.</p>
+              <a href="#" class="btn submit-index centrado">Conocé más</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Entrega</h5>
+              <p class="card-text">Contamos con entregas en 24hs. También disponemos de entregas express y retiro por nuestro mostrador en menos de 30min.</p>
+              <a href="./pages/productos.html" class="btn submit-index centrado">¡Comprá acá!</a>
+            </div>
+          </div>
+          </div>
         </section>
-        <section class="index">
-            <!--Carrousel los datos irán rotando-->
-            <div><strong>3927</strong>CLIENTES CONTENTOS</div><div><strong>1299918</strong>PRODUCTOS VENDIDOS</div><div><strong>30</strong>AÑOS DE EXPERIENCIA</div><div><strong>9/10</strong>NOS RECOMIENDAN</div>
+        <section class="index datos">
+            <div><strong>3927</strong> CLIENTES CONTENTOS</div><div><strong>1299918</strong> PRODUCTOS VENDIDOS</div><div><strong>30</strong> AÑOS DE EXPERIENCIA</div><div><strong>9/10</strong> NOS RECOMIENDAN</div>
         </section>
-        <section>
-             <!--Iframe de video-->
-            <p>Nos llena de felicidad poder anunciarles que estamos incursionando en el mundo de los chasis de la mano de los mejores: <a href="https://collinotiendaoficial.com.ar/" target="_blank">COLLINO</a></p>
-            <p>Les dejamos un poco de lo que fue su último gran trabajo. Innovadores y distruptivos es como se definen y este chasis afirma estos conceptos</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PQzeYa6_ejw?si=WR13k6yOIIEObm01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
-        <section>
-            <!--Carrousel las imagenes se dejan sin modificar tamaños ya que irán rotando-->
+        <div class="formbb">
+            <p>Nos llena de felicidad poder anunciarles que estamos incursionando en el mundo de los chasis de la mano de los mejores: <a href="https://collinotiendaoficial.com.ar/" target="_blank" class="ab">COLLINO</a>. Les dejamos un poco de lo que fue su último gran trabajo. Innovadores y distruptivos es como se definen y este chasis afirma estos conceptos
+        </div>
+        <div class="iframe">  
+              <iframe width="850" height="500" src="https://www.youtube.com/embed/PQzeYa6_ejw?si=WR13k6yOIIEObm01" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div>
             <h2>NOS ACOMPAÑAN EN ESTE CAMINO</h2>
-                <a href="https://fantini.com.ar/" target="_blank"><img src="./assets/Nos acompañan/FANTINI.png" alt="Faniti"></a>
-                <a href="https://www.collinotiendaoficial.com.ar/" target="_blank"><img src="./assets/Nos acompañan/collino.png" alt="Collino"></a>
-                <a href="https://autorepuestosmyl.com.ar/" target="_blank"><img src="./assets/Nos acompañan/M&L.png" alt="M&L"></a>
-                <a href="https://mouraya.moura.com.ar/" target="_blank"><img src="./assets/Nos acompañan/moura.png" alt="Moura"></a>
-                <a href="https://www.ngk.com/" target="_blank"><img src="./assets/Nos acompañan/ngk.png" alt="NGK"></a>
-        </section>         
+        </div>
+        <section class="nos-acompanan">
+          <img src="./assets/Nos acompañan/collino.png" alt="Empresa collino" class="nos-acompanan-img">
+          <img src="./assets/Nos acompañan/FANTINI.png" alt="Empresa Fantini" class="nos-acompanan-img">
+          <img src="./assets/Nos acompañan/M&L.png" alt="Empresa M&L" class="nos-acompanan-img">
+          <img src="./assets/Nos acompañan/moura.png" alt="Empresa Moura" class="nos-acompanan-img">
+        </section>    
     </main>
     <div>
         <!--Boton de wsp-->
         <a href="https://wa.me/+5493516015248?text=Hola! Tengo una consulta para ustedes" target="_blank" class="sticky">
-        <img src="./assets/WSP.png" alt="WhatsApp Chat" class="wsp">
+        <img src="./assets/WhatsApp.jpg" alt="WhatsApp Chat" class="wsp">
         </a>
-    </div>   
+    </div>
     <!--Inicio footer-->
-    <footer>
-        <a href="#top">Ir a la parte superior</a>
+    <footer class="footer">
+        <a href="#top" class="a">Ir a la parte superior</a>
         <div>
         <p>Redes sociales</p>
-            <ul class="redes-sociales">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook a"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter a"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram a"></i></a></li>
             </ul>
         </div>
             <p> CONTÁCTANOS LA DELFINA S.A.
                 0800-777-4272
                 ventas@ladelfina.com.ar</p><br>
-            <a href="./pages/avisos-legales.html">Avisos legales</a>
+            <a href="./pages/avisos-legales.html" class="a">Avisos legales</a>
             <p>Copyright ©2016 La delfina S.A.</p>
     </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

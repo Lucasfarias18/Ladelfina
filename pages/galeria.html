@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>LA DELFINA | Productos</title>
+    <title>LA DELFINA | Galeria</title>
 </head>
 <body class="font">
     <header id="top" class="header-1"> 
@@ -27,7 +27,7 @@
                   <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Productos</a>
+                  <a class="nav-link" href="../pages/productos.html">Productos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,7 +36,7 @@
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/galeria.html">Galeria</a></li>
+                    <li><a class="dropdown-item active" href="#">Galeria</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -49,46 +49,47 @@
             </div>
           </div>
         </nav>
-    </header>
-    <main>
-        <!--Contenido principal-->
-        <h1>PRODUCTOS</h1>
-        <h4>Conocé nuestros productos, comprá y... Te lo llevamos!</h4>
-        <div class="satisfaccion">
-            <form class="formbb">
-                <input placeholder="Que deseas buscar?" >
-                <button class="btn" type="submit">Buscar</button>
-            </form>
+      </header>
+    <div class="grid-container">
+        <div class="grid-img1">
+            <img src="../assets/Sucursal/Sucursal1.jpg" alt="">
         </div>
-        <div class="div-productos">
-            <div class="productos"><img src="../assets/productos/productos 2.png" alt="Frenos" class="card prod-1"></div>
-            <form action="#top">
-                <input type="number" placeholder="Cantidad">
-                <input type="reset">
-                <input type="submit" placeholder="Comprar">
-            <article><img src="../assets/productos/productos 3.png" alt="Sistema de encendido" class="card prod-2"></article>
-            <form action="#top">
-                <input type="number" placeholder="Cantidad">
-                <input type="reset">
-                <input type="submit" placeholder="Comprar">
-            <article><img src="../assets/productos/productos 4.png" alt="Filtros" class="card prod-3"></article>
-            <form action="#top">
-                <input type="number" placeholder="Cantidad">
-                <input type="reset">
-                <input type="submit" placeholder="Comprar">
-            <article><img src="../assets/productos/productos 5.png" alt="Amortiguación" class="card prod-4"></article>
-            <form action="#top">
-                <input type="number" placeholder="Cantidad">
-                <input type="reset">
-                <input type="submit" placeholder="Comprar">
-            </div>
-        <div class="satisfaccion">
-            <form action="#">
-                <h6>¿Te pareció util esta información?</h6>
-                <input type="range" step="5" min="0" max="20" required>
-            </form>
+        <div class="grid-img2">
+            <img src="../assets/Sucursal/Sucursal2.jpg" alt="">
         </div>
-    </main>
+        <div class="grid-img3">
+            <img src="../assets/Sucursal/Sucursal3.jpg" alt="">
+        </div>
+        <div class="grid-img4">
+            <img src="../assets/Sucursal/Sucursal4.jpg" alt="">
+        </div>
+        <div class="grid-img5">
+            <img src="../assets/Sucursal/Sucursal5.jpg" alt="">
+        </div>
+        <div class="grid-img6">
+            <img src="../assets/Sucursal/Sucursal6.jpg" alt="">
+        </div>
+        <div class="grid-img7">
+            <img src="../assets/Sucursal/Sucursal7.jpg" alt="">
+        </div>
+        <div class="grid-img8">
+            <img src="../assets/Sucursal/Sucursal8.jpg.png" alt="">
+        </div>
+        <div class="grid-img9">
+            <img src="../assets/Sucursal/Sucursal9.jpg" alt="">
+        </div>
+    </div>
+    <div class="centrado">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
     <div>
          <!--Boton de wsp-->
         <a href="https://wa.me/+5493516015248?text=Hola! Tengo una consulta para ustedes" target="_blank" class="sticky">
@@ -97,20 +98,20 @@
     </div>   
     <!--Inicio footer-->
     <footer>
-        <a href="#top">Ir a la parte superior</a>
+        <a href="#top" class="a">Ir a la parte superior</a>
         <div>
-            <p>Redes sociales</p>
-                <ul class="redes-sociales">
-                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
+        <p>Redes sociales</p>
+            <ul class="redes-sociales">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook a"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter a"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram a"></i></a></li>
+            </ul>
         </div>
-            <p> CONTÁCTANOS LA DELFINA S.A.
-                0800-777-4272
-                ventas@ladelfina.com.ar</p><br>
-            <a href="../pages/avisos-legales.html">Avisos legales</a>
-            <p>Copyright ©2016 La delfina S.A.</p>
+        <p> CONTÁCTANOS LA DELFINA S.A.
+            0800-777-4272
+            ventas@ladelfina.com.ar</p><br>
+        <a href="../pages/avisos-legales.html" class="a">Avisos legales</a>
+        <p>Copyright ©2016 La delfina S.A.</p>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

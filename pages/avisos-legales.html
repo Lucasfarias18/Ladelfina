@@ -7,60 +7,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>LA DELFINA | Aviso Legales</title>
 </head>
-<body>
-    <header>
-        <!--Logo principal-->
-        <div class="logo">
+<body class="font">
+    <header id="top" class="header-1"> 
+        <nav id="nav" class="navbar navbar-expand-lg">
+          <div class="container-fluid">
             <a href="../index.html">
-                <img src="../assets/Logo principal.png" alt="Logo principal"></a>
-        </div>
-        <!--Menu principal navegable-->
-        <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./sumate.html">Sumate!</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav> 
+              <img src="../assets/Logo principal.png" alt="Logo principal" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Quienes somos
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../pages/galeria.html">Galeria</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/sumate.html">Sumate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
             </div>
-    </header>
+          </div>
+        </nav>
+      </header>
     <main>
         <!--Contenido principal-->
         <h1>AVISOS LEGALES</h1>
             <p>Avisos legales: Resolución 244/2020 de la Secretaría de Comercio Interior del Ministerio de Desarrollo Productivo
          Última modificación: 01/10/2020
          Dispone que los plazos previstos en las garantías contractuales y legales en los términos de la Ley N° 24.240 se tienen por suspendidos por todo el periodo en que los consumidores se hayan visto imposibilitados de ejercer sus derechos en virtud del Aislamiento Social, Preventivo y Obligatorio dictado por el Decreto Nº 297 de fecha 19 de marzo de 2020 y sus modificatorios.</p>
+            <p>         Los repuestos y accesorios con la segunda importación más grande de la Argentina. Según datos del INDEC, en abril de 2023 representaron el 22% de las importaciones con 1.322 millones de dólares y un incremento del 3,3% respecto de abril del año anterior. En realidad, son un componente fundamental de los procesos industriales. Sin embargo, está prohibido el transporte transfronterizo de repuestos de automotores y otros. LA DELFINA, cumple con todas las normas y leyes nencesarias para su tranquilidad</p>
     <p><a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/234093/20200826" target="_blank">Accedé a la norma completa: Resolución 244/2020</p></a>
     </main>
     <div>
          <!--Boton de wsp-->
         <a href="https://wa.me/+5493516015248?text=Hola! Tengo una consulta para ustedes" target="_blank" class="sticky">
-        <img src="../assets/WSP.png" alt="WhatsApp Chat" class="wsp">
+        <img src="../assets/WhatsApp.jpg" alt="WhatsApp Chat" class="wsp">
         </a>
     </div>   
     <!--Inicio footer-->
     <footer>
-        <a href="#top">Ir a la parte superior</a>
+        <a href="#top" class="a">Ir a la parte superior</a>
         <div>
         <p>Redes sociales</p>
             <ul class="redes-sociales">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook a"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter a"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram a"></i></a></li>
             </ul>
         </div>
         <p> CONTÁCTANOS LA DELFINA S.A.
             0800-777-4272
             ventas@ladelfina.com.ar</p><br>
-        <a href="../pages/avisos-legales.html">Avisos legales</a>
+        <a href="../pages/avisos-legales.html" class="a">Avisos legales</a>
         <p>Copyright ©2016 La delfina S.A.</p>
     </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
