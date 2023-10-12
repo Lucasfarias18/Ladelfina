@@ -5,11 +5,11 @@
 }
 
 /*Fuente general y fondo provisiorio*/
-html {
+body {
     font-family:'Poppins', sans-serif;
 }
 
-main{
+.main{
     background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
 }
 
@@ -18,16 +18,18 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px;
+    padding: 0px;
     margin: 0px;
     color: #ffffff;
     background-color: black;
+    grid-area: header;
 }
 
 
 footer{
     background-color: #7f8787;
     text-align: center;
+    grid-area: footer;
 }
 
 h1{
@@ -40,7 +42,7 @@ h1{
 
 h2, h3, h5, h4{
     font-weight: 200;
-    margin: 5px 0px 10px 0px;
+    margin: 5px 0px 0px 0px;
     text-align: center;
 }
 
@@ -92,12 +94,24 @@ form input::placeholder{
     width: 300px;
     border: solid black;
     border-radius: 3% 3% 3% 3%;
-    margin: 5px 3px 3% 30px;
+    margin: 15px;
     box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
     -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
     -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
-    padding: 40px 40px 40px 40px;
+    padding: 20px 20px 20px 20px;
     background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+}
+
+.card-prod{
+    justify-content: space-between;
+    width: 300px;
+    border: solid black;
+    border-radius: 3% 3% 3% 3%;
+    margin: 15px;
+    box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
+    -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    padding: 20px 20px 20px 20px;
 }
 
 .logo{
@@ -123,6 +137,7 @@ form input::placeholder{
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    margin-left: 20px;
 }
 
 .ppalprod{
@@ -140,15 +155,6 @@ form input::placeholder{
     width: 70px;
     height: 70px;
     margin-left: 10px;
-}
-
-.form-input{
-    width: 20%;
-    padding: 3px;
-    border: none;
-    border-bottom: 4px solid black;
-    background-color: transparent;
-    text-align: center;
 }
 
 .satisfaccion{
@@ -189,12 +195,19 @@ form input::placeholder{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    grid-area: iframe;
+
+}
+
+.h2-grid{
+    grid-area: h2-grid;
 }
 
 .fondot1{
     background-image: url(../assets/Fondo\ titulo1.png);
     background-size: auto;
     color: #ffffff;
+    grid-area: fondot1;
 }
 
 .productos{
@@ -207,10 +220,12 @@ form input::placeholder{
 .formbb{
     display: flex;
     text-align: center;
+    grid-area: formbb;
 }
 
 .font{
     font-family:'Poppins', sans-serif;
+    grid-area: font;
 }
 
 .grid-container{
@@ -226,6 +241,7 @@ form input::placeholder{
         "img-7 img-8 img-8 img-9";
     background-color: black;
 }
+
 
 .grid-img1{
     grid-area: img-1;
@@ -304,6 +320,11 @@ form input::placeholder{
     width: 550px;
 }
 
+.form-prod{
+    display: flex;
+    
+}
+
 .div-productos{
     display: grid;
     grid-template-rows: repeat(4, 400px);
@@ -358,6 +379,7 @@ a:hover{
 .datos{
     margin: 5% auto 5% auto;
     font-size: 20px;
+    grid-area: datos;
 }
 
 .img-carr{
@@ -379,6 +401,7 @@ a:hover{
     display: flex;
     width: auto;
     height: 200px;
+    grid-area: nos-acompanan;
 }
 
 .nos-acompanan-img{
@@ -396,6 +419,14 @@ section img:hover{
     filter: contrast(120%);
 }
 
+.btn1{
+    border-style: double black;
+}
+
+.btn-wsp{
+    grid-area: btn-wsp;
+}
+
 @keyframes show{
     from{
         opacity: 0;
@@ -408,7 +439,7 @@ section img:hover{
     }
 }
 
-section{
+.animacion{
     view-timeline-name: --section;
     view-timeline-axis: block;
 
@@ -438,6 +469,181 @@ section{
     justify-items: center;
 }
 
-.grid-container-index{
-    display: grid;
+.clase-video{
+    width: 855px;
+    height: 430px;
 }
+
+.grid-1{
+    grid-area: grid-1;
+}
+
+.card-grid{
+    grid-area: card-grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+@media (min-width: 480px) and (max-width: 1200px){
+    .font{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "grid-1"
+        "fondot1"
+        "card-grid"
+        "datos"
+        "form"
+        "iframe"
+        "h2-grid"
+        "nos acompanan"
+        ;
+    }
+
+    .card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section{
+        display: none;
+    }
+
+    .iframe{
+        margin: 5px;
+    }
+
+    .clase-video{
+        width: 500px;
+        height: 470px;
+    }
+
+    .index{
+        flex-direction: column;
+    }
+
+    .nos-acompanan img{
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .formbb{
+        margin-top: 0%;
+    }
+
+    .h2-grid{
+        font-size: 1px;
+    }
+
+    .wsp{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 1200px){
+    .navbar-toggler{
+        background-color: white;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "img-1 img-1 img-1"
+        "img-2 img-2 img-2"
+        "img-3 img-3 img-3"
+        "img-5 img-4 img-4"
+        "img-6 img-4 img-4"
+        "img-7 img-7 img-7"
+        "img-8 img-8 img-8"
+        "img-9 img-9 img-9"
+        ;
+        object-fit: cover;
+        grid-gap: 5px;
+    }
+
+}
+
+
+@media (min-width: 300px) and (max-width: 479px){ 
+
+    .font{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "grid-1"
+        "fondot1"
+        "card-grid"
+        "datos"
+        "form"
+        "iframe"
+        "h2-grid"
+        "nos acompanan"
+        ;
+    }
+
+
+    .clase-video{
+        width: 300px;
+        height: 350px;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nos-acompanan img{
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .wsp{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 479px){ 
+
+    .logo{
+        width: 150px;
+        height: 100px;
+        text-align: left;
+    }
+
+    .navbar-toggler{
+        background-color: white;
+    }
+
+    .grid-container{
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-areas: 
+        "img-1 img-1"
+        "img-2 img-2"
+        "img-3 img-3"
+        "img-5 img-4"
+        "img-6 img-4"
+        "img-7 img-7"
+        "img-8 img-8"
+        "img-9 img-9"
+        ;
+        object-fit: cover;
+        grid-gap: 2px;
+    }
+}
+
+
