@@ -1,0 +1,58 @@
+.contacto-main{ 
+    text-align: center;
+    background-image: url(../assets/FONDO\ MAIN.jpg);
+    background-repeat: no-repeat;
+    color: #eaf2f8;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-sumate{
+    width: 550px;
+}
+
+.form-ta-sumate{
+    margin-top: 5%;
+}
+
+.submit-index{
+    margin: 10px 1px 10px 1px;
+    background-color:#6c7272;
+    color: turquoise;
+    border-radius: 50px;
+}
+
+.contact-h3{
+    margin: 20px auto 5px auto;
+    padding-bottom: 1px;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    grid-area: iframe;
+}
+
+@media (min-width: 300px) and (max-width: 479px){ 
+    
+    .form-sumate{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-control{
+        display: flex;
+        width: 350px;
+        justify-content: center;
+    }
+
+    h1{
+        background-color: red;
+    }
+}

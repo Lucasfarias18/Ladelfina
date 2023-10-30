@@ -1,0 +1,19 @@
+footer{
+    background-color: #7f8787;
+    text-align: center;
+    grid-area: footer;
+}
+
+.a{
+    text-decoration: none;
+    color: turquoise;
+    cursor: pointer;
+}
+
+.rs{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px;
+}

@@ -1,0 +1,70 @@
+.satisfaccion{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 600;
+}
+
+.formbb{
+    display: flex;
+    text-align: center;
+    grid-area: formbb;
+}
+
+.btn1{
+    border-style: double black;
+}
+
+.div-productos{
+    display: grid;
+    grid-template-rows: repeat(4, 400px);
+    grid-template-columns: repeat(1, 250px) ;
+    grid-template-areas: 
+    "prod1"
+    "prod2"
+    "prod3"
+    "prod4";
+    padding-left: 40%;
+    padding-bottom: 8%;   
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #eaf2f8;
+}
+
+.card-prod{
+    justify-content: space-between;
+    width: 300px;
+    border: solid black;
+    border-radius: 3% 3% 3% 3%;
+    margin: 15px;
+    box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
+    -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+    padding: 20px 20px 20px 20px;
+}
+
+.prod-1{
+    grid-area: prod1;
+}
+
+.prod-2{
+    grid-area: prod2;
+}
+
+.prod-3{
+    grid-area: prod3;
+}
+
+.prod-4{
+    grid-area: prod4;
+}
+
+.form-sumate{
+    width: 550px;
+}
+
+

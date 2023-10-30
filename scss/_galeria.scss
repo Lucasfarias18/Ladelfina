@@ -1,0 +1,112 @@
+.grid-container{
+    margin: 5px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas:
+        "img-1 img-1 img-2 img-3"
+        "img-1 img-1 img-2 img-3"
+        "img-4 img-5 img-6 img-6"
+        "img-7 img-8 img-8 img-9";
+    background-image: $fondo;
+}
+
+.grid-img1{
+    grid-area: img-1;
+}
+
+.grid-img2{
+    grid-area: img-2;
+}
+
+.grid-img3{
+    grid-area: img-3;
+}
+
+.grid-img4{
+    grid-area: img-4;
+}
+
+.grid-img5{
+    grid-area: img-5;
+}
+
+.grid-img6{
+    grid-area: img-6;
+}
+
+.grid-img7{
+    grid-area: img-7;
+}
+
+.grid-img8{
+    grid-area: img-8;
+}
+
+.grid-img9{
+    grid-area: img-9;
+}
+
+.grid-container div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 480px) and (max-width: 1200px){
+    .navbar-toggler{
+        background-color: white;
+    }
+
+    .grid-container{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "img-1 img-1 img-1"
+        "img-2 img-2 img-2"
+        "img-3 img-3 img-3"
+        "img-5 img-4 img-4"
+        "img-6 img-4 img-4"
+        "img-7 img-7 img-7"
+        "img-8 img-8 img-8"
+        "img-9 img-9 img-9"
+        ;
+        object-fit: cover;
+        grid-gap: 5px;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 479px){ 
+
+    .logo{
+        width: 150px;
+        height: 100px;
+        text-align: left;
+    }
+
+    .navbar-toggler{
+        background-color: white;
+    }
+
+    .grid-container{
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-areas: 
+        "img-1 img-1"
+        "img-2 img-2"
+        "img-3 img-3"
+        "img-5 img-4"
+        "img-6 img-4"
+        "img-7 img-7"
+        "img-8 img-8"
+        "img-9 img-9"
+        ;
+        object-fit: cover;
+        grid-gap: 2px;
+    }
+
+    .page-item{
+        width: 40%;
+        height: auto;
+    }
+}

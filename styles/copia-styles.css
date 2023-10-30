@@ -322,7 +322,6 @@ form input::placeholder{
 
 .form-prod{
     display: flex;
-    
 }
 
 .div-productos{
@@ -440,10 +439,10 @@ section img:hover{
 }
 
 .animacion{
-    view-timeline-name: --section;
+    view-timeline-name: --div;
     view-timeline-axis: block;
 
-    animation-timeline: --section;
+    animation-timeline: --div;
     animation-name: show;
 
     animation-range: entry 15% cover 45%;
@@ -645,4 +644,3 @@ section img:hover{
         grid-gap: 2px;
     }
 }
-

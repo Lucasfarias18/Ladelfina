@@ -1,7 +1,307 @@
+@import "variables";
+@import "reset";
+
+@import "header";
+@import "footer";
+
+@import "sobre-nosotros";
+@import "galeria";
+@import "sumate";
+@import "contacto";
+@import "productos";
+@import "avisos-legales";
+
+//Estilos etiquetas//
+
 h1{
-    background-color: turquoise;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+    font-family: 'Poppins';
 }
 
-h2{
-    background-color: red;
+h2, h3, h5, h4{
+    font-weight: 200;
+    margin: 2px 0px 0px 0px;
+    text-align: center;
+}
+
+body {
+    font-family:$fuente-principal;
+    background-image: $fondo;
+}
+
+p{
+    margin: 10px 0px 0px 10px;
+    display: inline-block;
+    align-items: center;
+}
+
+//Estilos del generales//
+
+//color principal pasar//
+
+.main{
+    background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+
+    .grid-1{
+        grid-area: grid-1;
+    }
+
+    .card{
+        justify-content: space-between;
+        width: 300px;
+        border: solid black;
+        border-radius: 3% 3% 3% 3%;
+        margin: 15px;
+        box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
+        -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+        -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+        padding: 20px 20px 20px 20px;
+        background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+    }
+
+    .card-grid{
+        grid-area: card-grid;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    
+}
+
+
+.btn1{
+    border-style: double black;
+}
+
+.submit-index{
+    margin: 10px 1px 10px 1px;
+    background-color:#6c7272;
+    color: turquoise;
+    border-radius: 50px;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.index{ 
+    display: flex;
+    text-align: center;
+    background-image: url(../assets/FONDO\ MAIN.jpg);
+    background-repeat: no-repeat;
+    color: #eaf2f8;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.datos{
+    margin: 5% auto 5% auto;
+    font-size: 20px;
+    grid-area: datos;
+}
+
+.formbb{
+    display: flex;
+    text-align: center;
+    grid-area: formbb;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    grid-area: iframe;
+
+}
+
+.clase-video{
+    width: 855px;
+    height: 430px;
+}
+
+.h2-grid{
+    grid-area: h2-grid;
+}
+
+.ab{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.nos-acompanan{
+    display: flex;
+    width: auto;
+    height: 200px;
+    grid-area: nos-acompanan;
+}
+
+.nos-acompanan-img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5 ease;
+}
+
+.btn-wsp{
+    grid-area: btn-wsp;
+}
+
+.sticky{
+    position: fixed;
+    top: 300px;
+}
+
+.wsp{
+    display: flex;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+
+// cambiar hover//
+
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+//animacion//
+
+@keyframes show{
+from{
+    opacity: 0;
+    scale: 25%;
+}
+
+to{
+    opacity: 1;
+    scale: 100%;
+    }
+}
+
+.animacion{
+    view-timeline-name: --div;
+    view-timeline-axis: block;
+
+    animation-timeline: --div;
+    animation-name: show;
+
+    animation-range: entry 15% cover 45%;
+    animation-fill-mode: both;
+}
+
+@media (min-width: 480px) and (max-width: 1200px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "grid-1"
+        "fondot1"
+        "card-grid"
+        "datos"
+        "form"
+        "iframe"
+        "h2-grid"
+        "nos acompanan"
+        ;
+    }
+
+    .card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section{
+        display: none;
+    }
+
+    .iframe{
+        margin: 5px;
+    }
+
+    .clase-video{
+        width: 500px;
+        height: 470px;
+    }
+
+    .index{
+        flex-direction: column;
+    }
+
+    .nos-acompanan img{
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .formbb{
+        margin-top: 0%;
+    }
+
+    .h2-grid{
+        font-size: 1px;
+    }
+
+    .wsp{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 479px){ 
+
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "grid-1"
+        "fondot1"
+        "card-grid"
+        "datos"
+        "form"
+        "iframe"
+        "h2-grid"
+        "nos acompanan"
+        ;
+    }
+
+
+    .clase-video{
+        width: 300px;
+        height: 350px;
+    }
+
+    .datos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nos-acompanan img{
+        border-radius: 50%;
+        object-fit: contain;
+    }
+
+    .wsp{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
 }
