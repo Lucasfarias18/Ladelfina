@@ -38,21 +38,3 @@
     height: 100vh;
     grid-area: iframe;
 }
-
-@media (min-width: 300px) and (max-width: 479px){ 
-    
-    .form-sumate{
-        display: flex;
-        justify-content: center;
-    }
-
-    .form-control{
-        display: flex;
-        width: 350px;
-        justify-content: center;
-    }
-
-    h1{
-        background-color: red;
-    }
-}

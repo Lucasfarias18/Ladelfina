@@ -50,17 +50,16 @@ footer {
   text-align: center;
   grid-area: footer;
 }
-
-.a {
+footer .a {
   text-decoration: none;
   color: turquoise;
   cursor: pointer;
+  margin: 10px;
 }
-
-.rs {
+footer .rs {
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  list-style-type: none;
   align-items: center;
   padding: 5px;
 }
@@ -79,7 +78,7 @@ footer {
   -webkit-box-shadow: 14px 14px 34px 11px rgba(0, 0, 0, 0.74);
   -moz-box-shadow: 14px 14px 34px 11px rgba(0, 0, 0, 0.74);
   padding: 20px 20px 20px 20px;
-  background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+  background-image: background-image linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
 }
 
 .border-img {
@@ -89,6 +88,24 @@ footer {
   margin-left: 20px;
 }
 
+.respon-sn {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+  .flex {
+    flex-direction: column;
+    width: 15px;
+  }
+  .card {
+    margin: 5px;
+  }
+  .rs {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .grid-container {
   margin: 5px;
   display: grid;
@@ -172,6 +189,10 @@ footer {
     height: auto;
   }
 }
+.form-ta-sumate {
+  margin-top: 5%;
+}
+
 .contacto-main {
   text-align: center;
   background-image: url(../assets/FONDO\ MAIN.jpg);
@@ -213,20 +234,6 @@ footer {
   grid-area: iframe;
 }
 
-@media (min-width: 300px) and (max-width: 479px) {
-  .form-sumate {
-    display: flex;
-    justify-content: center;
-  }
-  .form-control {
-    display: flex;
-    width: 350px;
-    justify-content: center;
-  }
-  h1 {
-    background-color: red;
-  }
-}
 .satisfaccion {
   display: flex;
   justify-content: center;
@@ -292,6 +299,36 @@ footer {
   width: 550px;
 }
 
+@media (min-width: 300px) and (max-width: 479px) {
+  .div-productos {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+  }
+  .card-prod {
+    width: 100%;
+  }
+  .form-sumate {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1200px) {
+  .div-productos {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+  }
+  .card-prod {
+    width: 100%;
+  }
+  .form-sumate {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+}
 h1 {
   font-weight: 700;
   text-decoration: underline;

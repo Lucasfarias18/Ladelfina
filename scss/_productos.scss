@@ -67,4 +67,41 @@
     width: 550px;
 }
 
+@media (min-width: 300px) and (max-width: 479px){ 
+    
+    .div-productos{
+        display: flex;
+        flex-direction: column ;
+        width: 50px;
+    }
+    
+    .card-prod{
+        width: 100%;
+    }
+
+    .form-sumate{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1200px){ 
+    
+    .div-productos{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+    
+    .card-prod {
+        width: 100%;
+    }
+
+    .form-sumate {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+}
 

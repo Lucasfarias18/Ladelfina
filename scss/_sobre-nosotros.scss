@@ -12,7 +12,7 @@
     -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
     -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
     padding: 20px 20px 20px 20px;
-    background-image: linear-gradient(to left, #ffffff, #fafafd, #f2f6fb, #eaf2f8, #e1eff4, #d4e3e6, #c7d7d9, #bacbcb, #a6b4b4, #929d9d, #7f8787, #6c7272);
+    background-image: $fondo;
 }
 
 
@@ -21,4 +21,28 @@
     width: 100px;
     height: 100px;
     margin-left: 20px;
+}
+
+.respon-sn{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 300px) and (max-width: 479px){ 
+
+    .flex{
+        flex-direction: column;
+        width: 15px;
+    }
+
+    .card{
+         margin: 5px;
+     }
+
+     .rs{
+        display: flex;
+        flex-direction: column;
+     }
+
+
 }
