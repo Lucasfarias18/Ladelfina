@@ -1,0 +1,17 @@
+@mixin medias-querys ($breakpoint) {
+    @if $breakpoint == 'desktop' {
+       @media (min-width: 1200px ){
+           @content;
+       }
+   }
+   @else if $breakpoint == 'tablet' {
+       @media (min-width: 480px) and (max-width: 1199px){
+           @content;
+       }
+   }
+   @if $breakpoint == 'mobile' {
+       @media (min-width: 300px) and (max-width: 479px){
+           @content;
+       }
+   } 
+}

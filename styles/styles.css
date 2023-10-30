@@ -158,10 +158,35 @@ footer .rs {
   object-fit: cover;
 }
 
-@media (min-width: 480px) and (max-width: 1200px) {
+@media (min-width: 480px) and (max-width: 1199px) {
   .navbar-toggler {
     background-color: white;
   }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .navbar-toggler {
+    background-color: white;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-areas: "img-1 img-1 img-1" "img-2 img-2 img-2" "img-3 img-3 img-3" "img-5 img-4 img-4" "img-6 img-4 img-4" "img-7 img-7 img-7" "img-8 img-8 img-8" "img-9 img-9 img-9";
+    object-fit: cover;
+    grid-gap: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 479px) {
+  .grid-container {
+    grid-template-columns: auto;
+    grid-template-areas: "img-1 img-1 img-1" "img-2 img-2 img-2" "img-3 img-3 img-3" "img-5 img-4 img-4" "img-6 img-4 img-4" "img-7 img-7 img-7" "img-8 img-8 img-8" "img-9 img-9 img-9";
+    object-fit: cover;
+    grid-gap: 5px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1200px) {
   .grid-container {
     grid-template-columns: auto;
     grid-template-areas: "img-1 img-1 img-1" "img-2 img-2 img-2" "img-3 img-3 img-3" "img-5 img-4 img-4" "img-6 img-4 img-4" "img-7 img-7 img-7" "img-8 img-8 img-8" "img-9 img-9 img-9";
@@ -175,9 +200,6 @@ footer .rs {
     height: 100px;
     text-align: left;
   }
-  .navbar-toggler {
-    background-color: white;
-  }
   .grid-container {
     grid-template-columns: 0.5fr 0.5fr;
     grid-template-areas: "img-1 img-1" "img-2 img-2" "img-3 img-3" "img-5 img-4" "img-6 img-4" "img-7 img-7" "img-8 img-8" "img-9 img-9";
@@ -189,10 +211,29 @@ footer .rs {
     height: auto;
   }
 }
-.form-ta-sumate {
+.centrado .form-ta-sumate {
   margin-top: 5%;
 }
-
+@media (min-width: 480px) and (max-width: 1199px) {
+  .centrado .form-ta-sumate {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado .form-ta-sumate {
+    width: 70%;
+    height: auto;
+  }
+}
+.centrado .form-sumate {
+  margin: 5px 120px 5px;
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado {
+    width: 100%;
+  }
+}
 .contacto-main {
   text-align: center;
   background-image: url(../assets/FONDO\ MAIN.jpg);

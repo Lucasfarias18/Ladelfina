@@ -1,11 +1,36 @@
+@import "mixin";
+.centrado{
 
-.form-ta-sumate{
-    margin-top: 5%;
-}
-
-
-@media (min-width: 300px) and (max-width: 479px){ 
-
+    .form-ta-sumate{
+        margin-top: 5%;
+        @include medias-querys('tablet') {
+            width: 70%;
+            height: auto;
+        }
     
+        @include medias-querys('mobile') {
+            width: 70%;
+            height: auto;
+    }
+    }
 
+    .form-sumate{
+        margin: 5px 120px 5px;
+    }
+
+    .form-control{
+        
+
+    }
+    @media (min-width: 300px) and (max-width: 479px){ 
+    
+        width: 100%;
+        
+    }
+
+    .form{
+        
+    
+   
+}
 }
