@@ -3,16 +3,17 @@
     background-image: url(../assets/FONDO\ MAIN.jpg);
     background-repeat: no-repeat;
     color: #eaf2f8;
-}
 
-.centrado{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    .centrado{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-.form-sumate{
-    width: 550px;
+    .form-sumate{
+        width: 550px;
+    }
+
 }
 
 .form-ta-sumate{
@@ -37,9 +38,17 @@
     align-items: center;
     height: 100vh;
     grid-area: iframe;
+    
+    .clase-video{
+        width: 855px;
+        height: 430px;
+}
 }
 
 @media (min-width: 300px) and (max-width: 479px){ 
-    
+    .iframe{
+        width: 300px;
+        padding-left: 30%;
+    }
 
 }

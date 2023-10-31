@@ -1,42 +1,42 @@
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0px;
     margin: 0px;
     color: #ffffff;
     background-color: black;
     grid-area: header;
-}
 
-.header-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
+    .logo{
+        display: flex;
+        flex: 1;
+        text-align: left;
+        width: 300px;
+        height: 200px;
+        &:hover{
+            background-color: black;
+            border: none;
+        }
+    }
 
-.logo{
-    display: flex;
-    flex: 1;
-    text-align: left;
-    width: 300px;
-    height: 200px;
-}
-
-//cambiar hover//
-.logo:hover{
-    background-color: black;
-    border: none;
-}
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .nav-link{
-    background-color: black;
-    color: turquoise;
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .nav-link{
+        background-color: black;
+        color: turquoise;
+    }
+    
+    .navbar-2{
+        display: flex;
+        justify-content: end;
+    }
 }
 
 
-.navbar-2{
-    display: flex;
-    justify-content: end;
+a{ 
+    &:hover{
+    font-weight: 700;
+    padding: 1px;
+    background-color: #ffffff;
+    color: black;
+}
 }

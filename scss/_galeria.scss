@@ -1,4 +1,8 @@
 @import "mixin";
+
+.titulo-galeria{
+    background-color: aqua;
+}
 .grid-container{
     margin: 5px;
     display: grid;
@@ -10,7 +14,13 @@
         "img-1 img-1 img-2 img-3"
         "img-4 img-5 img-6 img-6"
         "img-7 img-8 img-8 img-9";
-    background-image: $fondo;
+    background-color: black;
+
+    div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 .grid-img1{
@@ -49,20 +59,20 @@
     grid-area: img-9;
 }
 
-.grid-container div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.centrado{
+    display: flex;
+    justify-content: center;
 }
 
 
 .navbar-toggler{
     @include medias-querys('tablet') {
-        background-color: white;
+        background-color: $fondo;
     }
 
     @include medias-querys('mobile') {
-       background-color: white;
+       background-color: black;
 }
 }
 
@@ -98,61 +108,6 @@
             "img-9 img-9 img-9"
             ;
             object-fit: cover;
-            grid-gap: 5px;
+            grid-gap: 3px;
         }
-}
-
-
-
-@media (min-width: 480px) and (max-width: 1200px){
-   
-
-    .grid-container{
-        grid-template-columns: auto;
-        grid-template-areas: 
-        "img-1 img-1 img-1"
-        "img-2 img-2 img-2"
-        "img-3 img-3 img-3"
-        "img-5 img-4 img-4"
-        "img-6 img-4 img-4"
-        "img-7 img-7 img-7"
-        "img-8 img-8 img-8"
-        "img-9 img-9 img-9"
-        ;
-        object-fit: cover;
-        grid-gap: 5px;
-    }
-
-}
-
-@media (min-width: 300px) and (max-width: 479px){ 
-
-    .logo{
-        width: 150px;
-        height: 100px;
-        text-align: left;
-    }
-
-  
-
-    .grid-container{
-        grid-template-columns: 0.5fr 0.5fr;
-        grid-template-areas: 
-        "img-1 img-1"
-        "img-2 img-2"
-        "img-3 img-3"
-        "img-5 img-4"
-        "img-6 img-4"
-        "img-7 img-7"
-        "img-8 img-8"
-        "img-9 img-9"
-        ;
-        object-fit: cover;
-        grid-gap: 2px;
-    }
-
-    .page-item{
-        width: 40%;
-        height: auto;
-    }
 }

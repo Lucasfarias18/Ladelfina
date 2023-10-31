@@ -1,26 +1,26 @@
 .flex{
     display: flex;
-}
 
-.card{
-    justify-content: space-between;
-    width: 300px;
-    border: solid black;
-    border-radius: 3% 3% 3% 3%;
-    margin: 15px;
-    box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
-    -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
-    -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
-    padding: 20px 20px 20px 20px;
-    background-image: $fondo;
-}
+    .card{
+        justify-content: space-between;
+        width: 300px;
+        border: solid black;
+        border-radius: 3% 3% 3% 3%;
+        margin: 15px;
+        box-shadow: 14px 14px 34px 11px rgba (0,0,0,0.74);
+        -webkit-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+        -moz-box-shadow: 14px 14px 34px 11px rgba(0,0,0,0.74);
+        padding: 20px 20px 20px 20px;
+        background-image: $fondo;
+    }
 
+    .border-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: 20px;
+    }    
 
-.border-img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
 }
 
 .respon-sn{
@@ -29,20 +29,15 @@
 }
 
 @media (min-width: 300px) and (max-width: 479px){ 
-
     .flex{
         flex-direction: column;
-        width: 15px;
+        padding-left: 20%;
     }
+}
 
-    .card{
-         margin: 5px;
-     }
-
-     .rs{
-        display: flex;
+@media (min-width: 480px) and (max-width: 1200px){
+    .flex{
         flex-direction: column;
-     }
-
-
+        padding-left: 30%;
+    }
 }
