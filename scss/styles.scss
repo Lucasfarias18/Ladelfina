@@ -213,6 +213,13 @@ to{
 
 @media (min-width: 480px) and (max-width: 1200px){
 
+    header{
+        .logo{
+            width: 70%;
+            height: 50%;
+        }
+    }
+
     .navbar-toggler{
         background-color: white;
     }
@@ -244,11 +251,11 @@ to{
 
     .iframe{
         margin: 5px;
-    }
 
-    .clase-video{
-        width: 500px;
-        height: 470px;
+        .clase-video{
+            width: 400px;
+            height: 470px;
+        }
     }
 
     .index{
@@ -277,6 +284,13 @@ to{
 
 @media (min-width: 300px) and (max-width: 479px){ 
 
+    header{
+        .logo{
+            width: 70%;
+            height: 50%;
+        }
+    }
+
     .navbar-toggler{
         background-color: white;
     }
@@ -297,9 +311,13 @@ to{
     }
 
 
-    .clase-video{
-        width: 300px;
-        height: 350px;
+    .iframe{
+
+        .clase-video{
+            width: 230px;
+            height: 300px;
+        }
+    
     }
 
     .datos{

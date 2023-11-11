@@ -3,37 +3,63 @@
     justify-content: center;
     margin-top: 4%;
     font-size: 600;
+    
+    .formbb{
+        display: flex;
+        text-align: center;
+        grid-area: formbb;
+
+        .btn1{
+            border-style: double black;
+            }
+        }
 }
 
-.formbb{
-    display: flex;
-    text-align: center;
-    grid-area: formbb;
-}
-
-.btn1{
-    border-style: double black;
-}
 
 .div-productos{
     display: grid;
-    grid-template-rows: repeat(4, 400px);
+    grid-template-rows: repeat(5, 330px);
     grid-template-columns: repeat(1, 250px) ;
     grid-template-areas: 
     "prod1"
     "prod2"
     "prod3"
-    "prod4";
+    "prod4"
+    "satisfaccion";
     padding-left: 40%;
     padding-bottom: 8%;  
-}
 
-.productos{
+    .productos{
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     color: #eaf2f8;
+
+    .prod-1{
+        grid-area: prod1;
+    }
+    
+    .prod-2{
+        grid-area: prod2;
+    }
+    
+    .prod-3{
+        grid-area: prod3;
+    }
+    
+    .prod-4{
+        grid-area: prod4;
+    }
+    
+    .form-sumate{
+        width: 550px;
+    }
+
+    .satisfaccion{
+        grid-area: satisfaccion;
+    }
+    }
 }
 
 .card-prod{
@@ -48,46 +74,40 @@
     padding: 20px 20px 20px 20px;
 }
 
-.prod-1{
-    grid-area: prod1;
-}
 
-.prod-2{
-    grid-area: prod2;
-}
-
-.prod-3{
-    grid-area: prod3;
-}
-
-.prod-4{
-    grid-area: prod4;
-}
-
-.form-sumate{
-    width: 550px;
-}
 
 @media (min-width: 300px) and (max-width: 479px){ 
+
+    header{
+        .logo{
+            width: 10%;
+            height: 10%;
+        }
+    }
     
     .div-productos{
         display: flex;
-        flex-direction: column ;
+        flex-direction: column;
         width: 30px;
         padding-left: 10%;
     }
-
-
-    .form-sumate{
+    
+    .form-sumate {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 250px;
     }
-    
+
+    .card-prod{
+        width: 200px;
+        height: 250px;
+    }
+
 }
+    
 
 @media (min-width: 480px) and (max-width: 1200px){ 
-    
+
     .div-productos{
         display: flex;
         flex-direction: column;
@@ -99,6 +119,11 @@
         display: flex;
         flex-direction: column;
         width: 250px;
+    }
+
+    .card-prod{
+        width: 200px;
+        height: 250px;
     }
 }
 

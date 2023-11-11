@@ -1,22 +1,46 @@
 @import "mixin";
 .centrado{
 
-    .form-ta-sumate{
-        margin-top: 5%;
+    .form-control{
         @include medias-querys('tablet') {
-            width: 70%;
-            height: auto;
+            display: flex;
+            justify-content: center;
+            width: 50%;
         }
     
         @include medias-querys('mobile') {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+    }
+    }
+
+    .input-group{
+        @include medias-querys('tablet') {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+      }
+    
+        @include medias-querys('mobile') {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+    }
+
+    
+    .form-ta-sumate{
+        @include medias-querys('tablet') {
+            display: flex;
+            justify-content: center;
+        }
+    
+        @include medias-querys('mobile') {
+            display: flex;
+            justify-content: center;
             width: 70%;
-            height: auto;
     }
     }
 
-    .form-sumate{
-        margin: 5px 120px 5px 120px;
-    }
-
- 
+}
 }

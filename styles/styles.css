@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,22 +14,22 @@ header {
   background-color: black;
   grid-area: header;
 }
-header .logo {
+.header .logo {
   display: flex;
   flex: 1;
   text-align: left;
   width: 300px;
   height: 200px;
 }
-header .logo:hover {
+.header .logo:hover {
   background-color: black;
   border: none;
 }
-header .navbar-nav .nav-link.active, header .navbar-nav .nav-link.show, header .nav-link {
+.header .navbar-nav .nav-link.active, .header .navbar-nav .nav-link.show, .header .nav-link {
   background-color: black;
   color: turquoise;
 }
-header .navbar-2 {
+.header .navbar-2 {
   display: flex;
   justify-content: end;
 }
@@ -90,17 +90,17 @@ footer .rs {
 @media (min-width: 300px) and (max-width: 479px) {
   .flex {
     flex-direction: column;
-    padding-left: 20%;
+    padding-left: 0%;
   }
 }
 @media (min-width: 480px) and (max-width: 1200px) {
   .flex {
     flex-direction: column;
-    padding-left: 30%;
+    padding-left: 20%;
   }
 }
 .titulo-galeria {
-  background-color: aqua;
+  background-color: grey;
 }
 
 .grid-container {
@@ -187,23 +187,46 @@ footer .rs {
     grid-gap: 3px;
   }
 }
-.centrado .form-ta-sumate {
-  margin-top: 5%;
-}
 @media (min-width: 480px) and (max-width: 1199px) {
-  .centrado .form-ta-sumate {
-    width: 70%;
-    height: auto;
+  .centrado .form-control {
+    display: flex;
+    justify-content: center;
+    width: 50%;
   }
 }
 @media (min-width: 300px) and (max-width: 479px) {
-  .centrado .form-ta-sumate {
-    width: 70%;
-    height: auto;
+  .centrado .form-control {
+    width: 20%;
+    display: flex;
+    justify-content: center;
   }
 }
-.centrado .form-sumate {
-  margin: 5px 120px 5px 120px;
+@media (min-width: 480px) and (max-width: 1199px) {
+  .centrado .input-group {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado .input-group {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1199px) {
+  .centrado .input-group .form-ta-sumate {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado .input-group .form-ta-sumate {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+  }
 }
 
 .contacto-main {
@@ -217,18 +240,28 @@ footer .rs {
   justify-content: center;
   text-align: center;
 }
-.contacto-main .form-sumate {
+.contacto-main .centrado .form-sumate {
   width: 550px;
 }
-
-.form-ta-sumate {
+.contacto-main .centrado .form-ta-sumate {
   margin-top: 5%;
+}
+.contacto-main .centrado .form-ta-sumatesn {
+  margin-top: 5%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.4;
 }
 
 .submit-index {
   margin: 10px 1px 10px 1px;
   background-color: #6c7272;
-  color: turquoise;
+  color: white;
   border-radius: 50px;
 }
 
@@ -254,6 +287,10 @@ footer .rs {
     width: 300px;
     padding-left: 30%;
   }
+  .form-ta-sumatesn {
+    margin-top: 5%;
+    width: 20%;
+  }
 }
 .satisfaccion {
   display: flex;
@@ -261,32 +298,47 @@ footer .rs {
   margin-top: 4%;
   font-size: 600;
 }
-
-.formbb {
+.satisfaccion .formbb {
   display: flex;
   text-align: center;
   grid-area: formbb;
 }
-
-.btn1 {
+.satisfaccion .formbb .btn1 {
   border-style: double black;
 }
 
 .div-productos {
   display: grid;
-  grid-template-rows: repeat(4, 400px);
+  grid-template-rows: repeat(5, 330px);
   grid-template-columns: repeat(1, 250px);
-  grid-template-areas: "prod1" "prod2" "prod3" "prod4";
+  grid-template-areas: "prod1" "prod2" "prod3" "prod4" "satisfaccion";
   padding-left: 40%;
   padding-bottom: 8%;
 }
-
-.productos {
+.div-productos .productos {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: center;
   color: #eaf2f8;
+}
+.div-productos .productos .prod-1 {
+  grid-area: prod1;
+}
+.div-productos .productos .prod-2 {
+  grid-area: prod2;
+}
+.div-productos .productos .prod-3 {
+  grid-area: prod3;
+}
+.div-productos .productos .prod-4 {
+  grid-area: prod4;
+}
+.div-productos .productos .form-sumate {
+  width: 550px;
+}
+.div-productos .productos .satisfaccion {
+  grid-area: satisfaccion;
 }
 
 .card-prod {
@@ -301,27 +353,11 @@ footer .rs {
   padding: 20px 20px 20px 20px;
 }
 
-.prod-1 {
-  grid-area: prod1;
-}
-
-.prod-2 {
-  grid-area: prod2;
-}
-
-.prod-3 {
-  grid-area: prod3;
-}
-
-.prod-4 {
-  grid-area: prod4;
-}
-
-.form-sumate {
-  width: 550px;
-}
-
 @media (min-width: 300px) and (max-width: 479px) {
+  header .logo {
+    width: 10%;
+    height: 10%;
+  }
   .div-productos {
     display: flex;
     flex-direction: column;
@@ -331,7 +367,11 @@ footer .rs {
   .form-sumate {
     display: flex;
     flex-direction: column;
+    width: 250px;
+  }
+  .card-prod {
     width: 200px;
+    height: 250px;
   }
 }
 @media (min-width: 480px) and (max-width: 1200px) {
@@ -345,6 +385,10 @@ footer .rs {
     display: flex;
     flex-direction: column;
     width: 250px;
+  }
+  .card-prod {
+    width: 200px;
+    height: 250px;
   }
 }
 h1 {
@@ -514,6 +558,10 @@ section img:hover {
 }
 
 @media (min-width: 480px) and (max-width: 1200px) {
+  header .logo {
+    width: 70%;
+    height: 50%;
+  }
   .navbar-toggler {
     background-color: white;
   }
@@ -533,8 +581,8 @@ section img:hover {
   .iframe {
     margin: 5px;
   }
-  .clase-video {
-    width: 500px;
+  .iframe .clase-video {
+    width: 400px;
     height: 470px;
   }
   .index {
@@ -557,6 +605,10 @@ section img:hover {
   }
 }
 @media (min-width: 300px) and (max-width: 479px) {
+  header .logo {
+    width: 70%;
+    height: 50%;
+  }
   .navbar-toggler {
     background-color: white;
   }
@@ -564,9 +616,9 @@ section img:hover {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "grid-1" "fondot1" "card-grid" "datos" "form" "iframe" "h2-grid" "nos acompanan";
   }
-  .clase-video {
-    width: 300px;
-    height: 350px;
+  .iframe .clase-video {
+    width: 230px;
+    height: 300px;
   }
   .datos {
     display: flex;
