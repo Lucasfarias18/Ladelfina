@@ -1,21 +1,21 @@
 @import "mixin";
 .centrado{
 
+    width: 100%;
+    padding-left: 5%;
+
     .form-control{
         @include medias-querys('tablet') {
-            display: flex;
-            justify-content: center;
-            width: 50%;
-        }
+             width: 110%;
+         }
     
         @include medias-querys('mobile') {
-            width: 20%;
+            width: 100%;
     }
     }
 
-    .input-group{
+    .input-group{   
         @include medias-querys('tablet') {
-            width: 50%;
             display: flex;
             justify-content: center;
       }
@@ -23,7 +23,6 @@
         @include medias-querys('mobile') {
             display: flex;
             justify-content: center;
-            width: 50%;
     }
 
     
@@ -36,7 +35,6 @@
         @include medias-querys('mobile') {
             display: flex;
             justify-content: center;
-            width: 100%;
     }
     }
 

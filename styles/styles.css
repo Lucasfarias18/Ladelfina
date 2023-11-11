@@ -188,43 +188,42 @@ footer .rs {
     grid-gap: 3px;
   }
 }
+.centrado {
+  width: 100%;
+  padding-left: 5%;
+}
 @media (min-width: 480px) and (max-width: 1199px) {
   .centrado .form-control {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+    width: 110%;
   }
 }
 @media (min-width: 300px) and (max-width: 479px) {
   .centrado .form-control {
-    width: 20%;
-  }
-}
-@media (min-width: 480px) and (max-width: 1199px) {
-  .centrado .input-group {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (min-width: 300px) and (max-width: 479px) {
-  .centrado .input-group {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-}
-@media (min-width: 480px) and (max-width: 1199px) {
-  .centrado .input-group .form-ta-sumate {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (min-width: 300px) and (max-width: 479px) {
-  .centrado .input-group .form-ta-sumate {
-    display: flex;
-    justify-content: center;
     width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 1199px) {
+  .centrado .input-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado .input-group {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 1199px) {
+  .centrado .input-group .form-ta-sumate {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  .centrado .input-group .form-ta-sumate {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -390,6 +389,10 @@ footer .rs {
     height: 250px;
   }
 }
+.btn {
+  color: aquamarine;
+}
+
 h1 {
   font-weight: 700;
   text-decoration: underline;
